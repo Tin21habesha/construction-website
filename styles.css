@@ -725,3 +725,132 @@ img {
     padding: 25%;
     padding-bottom: 10px;
 }
+
+/* Responsive Design */
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-image {
+        justify-content: center;
+    }
+
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        flex-direction: column;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        background: white;
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project {
+        flex-direction: column;
+    }
+
+    .project-info {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .investment-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .investment-item {
+        width: 80%;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        text-align: center;
+    }
+
+    .map iframe {
+        height: 200px;
+    }
+
+    .footer {
+        height: auto;
+        padding: 20px;
+    }
+}
+
+/* Mobile Navigation Button */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    z-index: 1010;
+}
+
+.menu-toggle div {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+}
