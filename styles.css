@@ -988,6 +988,15 @@ img {
     .content h1 {
         font-size: 2rem;
     }
+    
+    .content p, 
+    .core-values .heading p, 
+    .value-card p, 
+    .contact-item p {
+        max-width: 95%; /* Increase text width */
+        padding: 0 10px; /* Reduce left & right padding */
+        text-align: justify; /* Make text easier to read */
+    }
 
     .content p {
         font-size: 1rem;
