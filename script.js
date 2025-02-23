@@ -95,4 +95,11 @@ document.addEventListener("DOMContentLoaded", function () {
     menuToggle.addEventListener("click", function () {
         navLinks.classList.toggle("active");
     });
+
+    // Optional: Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+        if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+            navLinks.classList.remove("active");
+        }
+    });
 });
