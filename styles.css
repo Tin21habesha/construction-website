@@ -988,7 +988,7 @@ img {
     .content h1 {
         font-size: 2rem;
     }
-    
+
     .content p, 
     .core-values .heading p, 
     .value-card p, 
@@ -998,7 +998,15 @@ img {
         text-align: justify; /* Make text easier to read */
     }
 
+    .content {
+        width: 100%; /* Make it take full width */
+        text-align: left; /* Align text to the left */
+        padding: 0 15px; /* Add some padding for spacing */
+    }
+
     .content p {
+        max-width: 100%; /* Allow paragraph to expand fully */
+        text-align: justify; /* Improve readability */
         font-size: 1rem;
     }
 
@@ -1038,3 +1046,4 @@ img {
         padding: 10px 15px;
     }
 }
+
